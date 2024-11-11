@@ -1,0 +1,118 @@
+
+.login-area{
+    height: 100vh;
+    font-family: "Itim", cursive;
+}
+
+.login-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-header{
+    text-decoration: underline;
+}
+
+.login-container{
+    background-color: #effbf6;
+    border-style: solid;
+    border-color: #061810;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.login-input{
+    border-style: solid;
+    border-color: #061810;
+    border-radius: 10px;
+    height: 40px;
+    margin-bottom: 20px;
+    background-color: white;
+    width: 400px;
+    overflow: hidden;
+}
+
+.login-text-area{
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-family: "Itim", cursive;
+    font-size: 20px;
+}
+
+.login-text-area:focus{
+    outline: none;
+}
+
+.login-button{
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #061810;
+    background-color: #9b8ee1;
+    width: 400px;
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px #0618103b;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.login-button:hover{
+    box-shadow: none;
+}
+
+.sign-in-option-container{
+    display: flex;
+    align-items: center;
+}
+
+.no-account{
+    font-size: 20px;
+    color: #0618105d;
+    margin-right: 10px;
+}
+
+.create-account-button{
+    border-style: solid;
+    border-color: #061810;
+    color: #061810;
+    border-radius: 10px;
+    background-color: #3ecc8e8f;
+    border-width: 2px;
+    font-size: 20px;
+    height: 30px;
+    padding: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.create-account-button:hover{
+    transform: scale(1.03);
+}
+
+.login-error{
+    color: #ba72da;
+    font-size: 20px;
+}
+
+.form-btn{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #06181000;
+    cursor: pointer;
+    font-family: "Itim", cursive;
+    color: #061810;
+    font-size: 20px;
+}

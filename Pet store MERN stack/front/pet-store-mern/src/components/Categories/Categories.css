@@ -1,0 +1,35 @@
+.main-categories-section{
+    background-color: #effbf6;
+    font-family: "Itim", cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #061810;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.main-categories-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.category-image-container{
+    height: 200px;
+    width: 200px;
+    background-color: #ba72da;
+    border-radius: 10px;
+}
+
+.main-category-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category-label{
+    font-size: 25px;
+}

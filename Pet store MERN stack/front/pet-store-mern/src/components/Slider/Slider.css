@@ -1,0 +1,36 @@
+.slider-container{
+    background-color: #effbf6;
+    max-height: 700px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-slider{
+    transition: 0.5s;
+}
+
+.slider-image{
+    width: 100vw;
+}
+
+.main-dots{
+    z-index: 5;
+    bottom: 5px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.slider-dot{
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    border-style: solid;
+    border-color: #061810;
+    border-radius: 50%;
+    margin: 5px;
+    transition: 0.4s;
+}

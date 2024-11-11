@@ -1,0 +1,359 @@
+.nav{
+    position: sticky;
+    z-index: 10;
+    top: 0px;
+}
+
+.nav-container{
+    background-color: #effbf6;
+    color: #061810;
+    display: flex;
+    justify-content: center;
+    font-family: "Itim", cursive;
+}
+
+.nav-contents{
+    margin-top: 20px;
+    width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.btn-drop-icon{
+    margin-left: 10px;
+}
+
+.nav-items{
+    display: flex;
+}
+
+.nav-button{
+    text-decoration: none;
+    color: #061810;
+    font-size: 20px;
+    transition: 0.3s;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.nav-button:hover{
+    background-color: rgba(62, 204, 142, 0.2);
+    transition: 0.3s;
+}
+
+.nav-register-button{
+    background-color: #9b8ee1;
+    text-decoration: none;
+    color: #061810;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 23px;
+    margin-left: 5px;
+    border-style: solid;
+    border-color: #061810;
+    box-shadow: 0 4px 6px #0618103b;
+    transition: 0.3s;
+}
+
+.nav-register-button:hover{
+    transform: translateY(4px);
+    box-shadow: none;
+}
+
+.nav-logo{
+    height: 80px;
+}
+
+.logo-image{
+    height: 80%;
+    cursor: pointer;
+}
+
+.brand-drop-items{
+    position: absolute;
+    background-color: #effbf6;
+    margin-top: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #061810;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.drop-link{
+    font-size: 23px;
+    padding: 15px;
+    text-decoration: none;
+    color: #061810;
+    transition: 0.3s;
+}
+
+.drop-link:hover{
+    background-color: #9a8ee16e;
+}
+
+.brand{
+    width: 120px;
+    height: 120px;
+    background-color: aqua;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.brand-image{
+    height: 100%;
+}
+
+.brand:hover{
+    transform: scale(1.05);
+}
+
+.brand-dropdown:hover .brand-drop-items{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+.pet-drop-items{
+    position: absolute;
+    background-color: #effbf6;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.pet-dropdown:hover .pet-drop-items{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+.pet-drop-items a{
+    display: block;
+}
+
+.nav-responsive-container{
+    background-color: #effbf6;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: sticky;
+    z-index: 4;
+}
+
+.nav-responsive-contents{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-side-btn{
+    margin-top: 10px;
+}
+
+.sidebar-btn{
+    font-size: 30px;
+    text-decoration: none;
+    color: #061810;
+}
+
+.menu-area{
+    position: relative;
+    width: 100%;
+}
+
+.menu{
+    position: absolute;
+    width: 100%;
+}
+
+.menu-container{
+    z-index: 1;
+    background-color: #effbf6;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #061810;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: "Itim", cursive;
+    font-size: 37px;
+    padding:  5px 15px 15px 15px;
+    animation-name: fadeMenu;
+    animation-duration: 0.5s;
+}
+
+@keyframes fadeMenu {
+    0% {opacity: 0; transform: translateY(-1000px);}
+    50% {opacity: 1; transform: translateY(30px);}
+    100% {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeOutMenu {
+    0% {opacity: 1; transform: translateY(0);}
+    50% {opacity: 1; transform: translateY(30px);}
+    100% {opacity: 0; transform: translateY(-500px);}
+}
+
+.menu-container.closing {
+    animation-name: fadeOutMenu;
+    animation-duration: 0.5s;
+}
+
+@keyframes slideIn {
+    from{
+        max-height: 0;
+    }
+    to{
+        max-height: 600px;
+    }
+}
+
+@keyframes slideOut {
+    from{
+        max-height: 600px;
+    }
+    to{
+        max-height: 0;
+    }
+}
+
+.brand-menu{
+    margin-top: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #0618109a;
+    font-size: 23px;
+    overflow: hidden;
+    animation-name: slideIn;
+    animation-duration: 0.5s;
+}
+
+.brand-menu.closing{
+    animation-name: slideOut;
+    animation-duration: 0.5s;
+}
+
+.pet-menu.closing{
+    animation-name: slideOut;
+    animation-duration: 0.5s;
+}
+
+.brand-menu a{
+    display: block;
+}
+
+.pet-menu{
+    margin-top: 10px;
+    height: 406px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #0618109a;
+    font-size: 23px;
+    overflow: hidden;
+    animation-name: slideIn;
+    animation-duration: 0.5s;
+}
+
+.pet-menu a{
+    display: block;
+}
+
+.brand-menu p{
+    margin: 0;
+    padding: 10px;
+    color: #ba72da;
+}
+
+.nav-browse{
+    background-color: #9b8ee1;
+    border-style: solid;
+    text-decoration: none;
+    border-radius: 10px;
+    color: #061810;
+    padding: 10px;
+    max-width: 300px;
+    box-shadow: 0 4px 6px #0618103b;
+    transition: 0.3s;
+}
+
+.nav-browse:hover{
+    box-shadow: none;
+}
+
+.b-menu{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.nav-account-responsive{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.shopping-cart-btn{
+    color: #061810;
+    font-size: 30px;
+}
+
+.nav-mobile-buttons{
+    display: flex;
+}
+
+.shopping-cart-responsive{
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.search-area{
+    display: flex;
+    align-items: center;
+}
+
+.search-bar{
+    height: 40px;
+    width: 200px;
+    border-radius: 35px;
+    border-style: solid;
+    border-width: 3px;
+    font-size: 20px;
+    padding: 4px;
+    border-color: #061810;
+    font-family: "Itim", cursive;
+}
+
+.search-button{
+    font-size: 20px;
+    background-color: #9b8ee1;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    border-style: solid;
+    border-color: #061810;
+    cursor: pointer;
+}
+
+.search-responsive{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+

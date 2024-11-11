@@ -1,0 +1,38 @@
+.register-area{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #061810;
+    font-family: "Itim", cursive;
+    flex-direction: column;
+}
+
+.register-container{
+    border-radius: 15px;
+    border-style: solid;
+    background-color: #effbf6;
+    border-color: #061810;
+    padding: 30px;
+}
+
+.register-logo{
+    height: 60px;
+}
+
+.form-text{
+    font-size: 33px;
+    text-decoration: underline;
+}
+
+.go-to-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.submit-button{
+    border-width: 3px;
+    font-family: "Itim", cursive;
+}

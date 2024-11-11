@@ -1,0 +1,45 @@
+.delete-header{
+    font-family: "Itim", cursive;
+    font-size: 50px;
+    color: #061810;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.delete-area{
+    padding-top: 2%;
+    font-family: "Itim", cursive;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 2%;
+}
+
+.delete-text{
+    font-size: 20px;
+    color: #0618109a;
+}
+
+.delete-bullet-points{
+    font-size: 20px;
+}
+
+.delete-account-button{
+    border-radius: 10px;
+    height: 50px;
+    font-size: 25px;
+    border-style: solid;
+    border-color: #061810;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin-top: 30px;
+    background-color: #9b8ee1;
+    box-shadow: 0 4px 6px #0618103b;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.delete-account-button:hover{
+    box-shadow: none;
+}

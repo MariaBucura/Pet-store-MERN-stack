@@ -1,0 +1,54 @@
+.account-area{
+    height: 900px;
+    width: 500px;
+    font-family: "Itim", cursive;
+    padding-left: 10%;
+}
+
+.account{
+    position: relative;
+    display: flex;
+}
+
+.user-full-name{
+    font-size: 40px;
+    display: block;
+    margin: 0;
+    padding-top: 20px;
+    text-decoration: none;
+    color: #061810;
+}
+
+
+
+.logout-button{
+    font-size: 40px;
+    background-color: #06181000;
+    border: none;
+    font-family: "Itim", cursive;
+    color: #061810;
+    cursor: pointer;
+    padding-top: 20px;
+}
+
+.delete-button{
+    position: absolute;
+    bottom: 20px;
+}
+
+@media (max-width: 900px){
+    .account{
+        flex-direction: column;
+    }
+    .delete-button{
+        bottom: auto;
+    }
+    .account-area{
+        height: 400px;
+    }
+}
+
+.user-display-name{
+    font-size: 50px;
+    font-weight: bold;
+}

@@ -1,0 +1,30 @@
+.featured-brands-section{
+    padding-top: 100px;
+    background-color: #effbf6;
+    font-family: "Itim", cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #061810;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.featured-brands-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.featured-brands-area{
+    width: 100%;
+}
+
+.featured-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
