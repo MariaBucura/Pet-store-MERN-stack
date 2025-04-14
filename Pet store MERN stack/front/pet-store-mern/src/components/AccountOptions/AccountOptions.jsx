@@ -46,6 +46,14 @@ const AccountOptions = () => {
                 </div>
                 <a href='#' className="user-full-name" onClick={togglePersonalInformationTab}>Personal information</a>
                 <a href='#' className="user-full-name">Order history</a>
+                {user.role == "admin" ? 
+                <div>
+                    <a href='/addproduct' className="user-full-name">Add product</a>
+                    <a href='/addbrand' className="user-full-name">Add brand</a>
+                </div>
+                :
+                <div></div>
+                }
                 <button className='logout-button' onClick={handleLogout}> Log out</button>
                 <a href='#' className="user-full-name delete-button" onClick={toggleDeleteAccountTab}>Delete account</a>
             </div>

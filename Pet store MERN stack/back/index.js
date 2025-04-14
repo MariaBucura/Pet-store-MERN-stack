@@ -3,8 +3,16 @@ import cors from 'cors';
 import mongoose from 'mongoose';
 import {PORT, mongoDBURL} from './config.js';
 import router from './Routes/authRoute.js';
-import userRouter from './Routes/userRoute.js'
+import userRouter from './Routes/userRoute.js';
+import brandRouter from './Routes/brandRoute.js';
+import productRouter from './Routes/productRoute.js';
 import cookieParser from 'cookie-parser';
+import multer from 'multer';
+import path from 'path';
+import fs from 'fs';
+import { fileURLToPath } from 'url';
+import { upload, __dirname } from './middlewares/Upload.js';
+
 
 const app = express();
 
@@ -24,6 +32,11 @@ app.get('/', (req, res) => {
 
 app.use('/', router);
 app.use('/account', userRouter);
+app.use('/brand', brandRouter);
+app.use('/product', productRouter);
+
+
+app.use('/back', express.static(path.join(__dirname, 'images')))
 
 mongoose
     .connect(mongoDBURL)

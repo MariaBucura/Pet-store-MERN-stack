@@ -1,8 +1,13 @@
 import mongoose from 'mongoose';
+import { reviewSchema } from './Review.js';
 
 export const productSchema = mongoose.Schema(
     {
         name: {
+            type: String,
+            required: true
+        },
+        brand: {
             type: String,
             required: true
         },
@@ -14,14 +19,26 @@ export const productSchema = mongoose.Schema(
             type: Number,
             required: true
         },
-        pet: {
+        petCategory: {
             type: String,
             required: true
+        },
+        petSubCategory: {
+            type: [String]
         },
         category: {
             type: String,
             required: true
         },
+        subCategory: {
+            type: String
+        },
+        images: {
+            type: [String]
+        },
+        reviews: {
+            type: [reviewSchema]
+        }
     },
     {
         timestamps: true

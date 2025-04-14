@@ -8,6 +8,9 @@ import Home from './pages/Home.jsx'
 import Login from './pages/Login.jsx';
 import Register from './pages/Register.jsx';
 import Account from './pages/Account.jsx';
+import BrandPage from './pages/BrandPage.jsx';
+import AddProduct from './pages/AddProduct.jsx';
+import Product from './pages/Product.jsx'
 
 const App = () => {
   return (
@@ -17,6 +20,9 @@ const App = () => {
         <Route path='/auth' element={<Login />} />
         <Route path='/register' element={<Register />} />
         <Route path='/account' element={<Account />} />
+        <Route path='/addbrand' element={<BrandPage />} />
+        <Route path='/addproduct' element={<AddProduct />} />
+        <Route path='/product' element={<Product/>} />
       </Routes>
     </Router>
   )

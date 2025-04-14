@@ -1,0 +1,223 @@
+.add-products-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Itim", cursive;
+    padding-bottom: 100px;
+}
+
+.image-added{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.price-input{
+    display: flex;
+    align-items: center;
+}
+
+.currency-container{
+    font-size: 30px;
+}
+
+.selected-images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selected-images-container{
+    width: auto;
+}
+
+.add-input-container{
+    height: 40px;
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    border-style: solid;
+    font-size: 20px;
+    border-color: #061810;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin: 20px;
+}
+
+.add-input-dropdown{
+    border: none;
+    font-family: "Itim", cursive;
+    font-size: 20px;
+    z-index: 6;
+}
+
+.add-input-dropdown:focus{
+    outline: none;
+}
+
+.input-drop-button{
+    margin: 10px;
+    font-size: 30px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+.pet-category-dropdown{
+    position: absolute;
+    background-color: #effbf6;
+    width: 400px;
+    top: 43px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    left: -2px;
+    overflow: hidden;
+    animation-name: dropSlideIn;
+    animation-duration: 0.5s;
+}
+
+.pet-category-dropdown.closing{
+    animation-name: dropSlideOut;
+    animation-duration: 0.5s;
+}
+
+.select-drop-button{
+    padding: 15px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.input-drop-button.open{
+    animation-name: rotateDrop;
+    animation-duration: 0.5s;
+    transform: rotate(-90deg);
+}
+
+.input-drop-button.close{
+    animation-name: rotateDropClose;
+    animation-duration: 0.5s;
+}
+
+
+.select-drop-button:hover{
+    background-color: #9a8ee148;
+}
+
+@keyframes dropSlideIn {
+    from{
+        max-height: 0px;
+    }
+    to{
+        max-height: 500px;
+    }
+}
+
+@keyframes dropSlideOut {
+    from{
+        max-height: 500px;
+    }
+    to{
+        max-height: 0px;
+    }
+}
+
+@keyframes rotateDrop {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-90deg);
+    }
+}
+
+@keyframes rotateDropClose {
+    from{
+        transform: rotate(-90deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
+
+.select-pet{
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-category-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 4;
+}
+
+.select-category{
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.select-brand{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-container{
+    z-index: 3;
+}
+
+.select-sub-food{
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sub-category{
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.selected-pets-area{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.selected-pet-item{
+    background-color: #9b8ee1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.delete-category-button{
+    margin-right: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.delete-category-button:hover{
+    color: #3ecc8e;
+}
+

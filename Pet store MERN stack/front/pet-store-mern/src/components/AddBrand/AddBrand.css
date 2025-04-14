@@ -1,0 +1,51 @@
+.add-header{
+    font-family: "Itim", cursive;
+    font-size: 60px;
+}
+
+.add-brand{
+    font-family: "Itim", cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.add-input{
+    border-radius: 10px;
+    height: 40px;
+    width: 400px;
+    border: none;
+    border-style: solid;
+    border-color: #061810;
+    font-family: "Itim", cursive;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.add-text{
+    font-size: 30px;
+}
+
+.image-input{
+    margin: 10px;
+    font-family: "Itim", cursive;
+}
+
+.add-description{
+    height: 300px;
+}
+
+.submit-product{
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #061810;
+    font-family: "Itim", cursive;
+    height: 60px;
+    width: 400px;
+    border-width: 3px;
+    font-size: 20px;
+    background-color: #9b8ee1;
+    cursor: pointer;
+}
